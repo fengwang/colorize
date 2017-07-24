@@ -59,7 +59,7 @@ color::rize( ORIGINAL_STRING,
              A_ATTRIBUTE_STRING );
 ```
 
-where the third parameter `attribute` can be
+where the last parameter `A_ATTRIBUTE_STRING` can be
 
 + `Default`
 + `Bold`
