@@ -13,7 +13,7 @@ color::rize( ORIGINAL_STRING,
 
 ```
 //example.cpp
-std::string message{"I am a Banana."};
+std::string message{"I am a Banana!"};
 // Output message with 
 //              foreground color -- Yellow
 //              background color -- Green
