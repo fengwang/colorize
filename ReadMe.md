@@ -71,6 +71,8 @@ where the third parameter `attribute` can be
 
 and an some of the examples
 
+![Example Image](https://github.com/fengwang/colorize/blob/master/example.png?raw=true)
+
 
 
 
