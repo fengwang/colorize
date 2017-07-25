@@ -7,7 +7,7 @@ int main()
     auto const& generate = []( std::string const & source, std::string const & fore, std::string const & back, std::string const & set, std::string const & reset )
     {
         if ( fore == back ) return;
-        std::cout << "color::rize(\"" << source  << "\", \"" << fore  << "\", \"" << back  << "\", \"" << set << "\") results in\n" << color::rize( source, fore, back, set, reset ) << "\n\n";
+        std::cout << "color::ize(\"" << source  << "\", \"" << fore  << "\", \"" << back  << "\", \"" << set << "\") results in\n" << color::ize( source, fore, back, set, reset ) << "\n\n";
     };
 
     std::string const message{ "I am a banana!" };

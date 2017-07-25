@@ -1,8 +1,25 @@
 #ifndef BKSDMLDVRLVOKOCTERXUEIKDNCRAQXFWSMBUNVVYFAPNJYHYEBBVBMCDQGBQWGARFUYWEDMFN
 #define BKSDMLDVRLVOKOCTERXUEIKDNCRAQXFWSMBUNVVYFAPNJYHYEBBVBMCDQGBQWGARFUYWEDMFN
 
+#ifdef __clang__
+#define SUPPRESS_WARNINGS \
+_Pragma("clang diagnostic push ") \
+_Pragma("clang diagnostic ignored \"-Wglobal-constructors\"") \
+_Pragma("clang diagnostic ignored \"-Wc++98-compat\"") \
+_Pragma("clang diagnostic ignored \"-Wexit-time-destructors\"") \
+_Pragma("clang diagnostic ignored \"-Wc++98-c++11-c++14-compat\"") \
+_Pragma("clang diagnostic ignored \"-Wmissing-variable-declarations\"" )
+#define RESTORE_WARNINGS \
+_Pragma( "clang diagnostic pop" )
+#else
+#define SUPPRESS_WARNINGS
+#define RESTORE_WARNINGS
+#endif
+
 #include <map>
 #include <string>
+
+SUPPRESS_WARNINGS
 
 namespace color
 {
@@ -77,12 +94,12 @@ namespace color
     //      auto new_message = color::rize( "I am a banana!", "Yellow", "Green" );
     //      std::cout << new_message << std::endl;
     //
-    inline std::string rize( std::string const& source,
-                             std::string foreground_color = "Default",
-                             std::string background_color = "Default",
-                             std::string set_formatting = "Default",
-                             std::string reset_formatting = "All"
-                           )
+    inline std::string ize( std::string const& source,
+                            std::string foreground_color = "Default",
+                            std::string background_color = "Default",
+                            std::string set_formatting = "Default",
+                            std::string reset_formatting = "All"
+                          )
     {
         std::string const control = "\033";
 
@@ -109,6 +126,8 @@ namespace color
     }
 
 }//namespace color
+
+RESTORE_WARNINGS
 
 #endif//BKSDMLDVRLVOKOCTERXUEIKDNCRAQXFWSMBUNVVYFAPNJYHYEBBVBMCDQGBQWGARFUYWEDMFN
 

@@ -4,9 +4,9 @@
 
 ```
 std::string const& colorized_string =
-color::rize( ORIGINAL_STRING,
-             A_FOREGROUND_COLOR_STRING, 
-             A_BACKGROUND_COLOR_STRING );
+color::ize( ORIGINAL_STRING,
+            A_FOREGROUND_COLOR_STRING,
+            A_BACKGROUND_COLOR_STRING );
 ```
 
 #### Example Usage:
@@ -14,10 +14,10 @@ color::rize( ORIGINAL_STRING,
 ```
 //example.cpp
 std::string message{"I am a Banana!"};
-// Output message with 
+// Output message with
 //              foreground color -- Yellow
 //              background color -- Green
-std::cout   << color::rize( message, "Yellow", "Green" )
+std::cout   << color::ize( message, "Yellow", "Green" )
             << std::endl;
 ```
 
@@ -53,8 +53,8 @@ with function
 
 ```
 std::string const& colorized_string =
-color::rize( ORIGINAL_STRING,
-             A_FOREGROUND_COLOR_STRING, 
+color::ize( ORIGINAL_STRING,
+             A_FOREGROUND_COLOR_STRING,
              A_BACKGROUND_COLOR_STRING,
              A_ATTRIBUTE_STRING );
 ```
