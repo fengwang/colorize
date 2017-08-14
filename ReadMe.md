@@ -53,7 +53,7 @@ with function
 
 ```
 std::string const& colorized_string =
-color::ize( ORIGINAL_STRING,
+color::rize( ORIGINAL_STRING,
              A_FOREGROUND_COLOR_STRING,
              A_BACKGROUND_COLOR_STRING,
              A_ATTRIBUTE_STRING );
