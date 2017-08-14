@@ -94,12 +94,12 @@ namespace color
     //      auto new_message = color::rize( "I am a banana!", "Yellow", "Green" );
     //      std::cout << new_message << std::endl;
     //
-    inline std::string ize( std::string const& source,
-                            std::string foreground_color = "Default",
-                            std::string background_color = "Default",
-                            std::string set_formatting = "Default",
-                            std::string reset_formatting = "All"
-                          )
+    inline std::string rize( std::string const& source,
+                             std::string foreground_color = "Default",
+                             std::string background_color = "Default",
+                             std::string set_formatting = "Default",
+                             std::string reset_formatting = "All"
+                           )
     {
         std::string const control = "\033";
 
