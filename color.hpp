@@ -24,7 +24,7 @@ SUPPRESS_WARNINGS
 namespace color
 {
 
-    std::map<std::string, std::string> color_foreground =
+    const static std::map<std::string, std::string> color_foreground =
     {
         { "Default", "39" },
         { "Black", "30" },
@@ -45,7 +45,7 @@ namespace color
         { "White", "97" }
     };
 
-    std::map<std::string, std::string> color_background =
+    const static std::map<std::string, std::string> color_background =
     {
         { "Default", "49" },
         { "Black", "40" },
@@ -67,7 +67,7 @@ namespace color
     };
 
 
-    std::map<std::string, std::string> formatting_set =
+    const static std::map<std::string, std::string> formatting_set =
     {
         { "Default", "0" },
         { "Bold", "1" },
@@ -78,7 +78,7 @@ namespace color
         { "Hidden", "8" }
     };
 
-    std::map<std::string, std::string> formatting_reset =
+    const static std::map<std::string, std::string> formatting_reset =
     {
         { "All", "0" },
         { "Bold", "21" },

@@ -1,6 +1,6 @@
-CXX           = clang++
-CXXFLAGS        = -std=c++1z -stdlib=libc++ -O3 -ferror-limit=2 -Weverything
-LFLAGS        = -lc++ -lc++abi -O3
+CXX           = g++
+CXXFLAGS      = -std=c++17 -O2 -Wall
+LFLAGS        = -O2
 OBJECTS_DIR   = .
 BIN_DIR       = .
 LINK 		  = $(CXX)
