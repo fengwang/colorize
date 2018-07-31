@@ -85,7 +85,7 @@ namespace color
         { "Default", "0" },
         { "Bold", "1" },
         { "Dim", "2" },
-        { "Underlined", "3" },
+        { "Underlined", "4" },
         { "Blink", "5" },
         { "Reverse", "7" },
         { "Hidden", "8" }
