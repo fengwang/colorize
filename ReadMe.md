@@ -51,7 +51,7 @@ g++ -o example example.cpp -std=c++17
 
 with function
 
-```
+```cpp
 std::string const& colorized_string =
 color::rize( ORIGINAL_STRING,
              A_FOREGROUND_COLOR_STRING,
@@ -74,6 +74,12 @@ and an some of the examples
 ![Example Image](https://github.com/fengwang/colorize/blob/master/example.png?raw=true)
 
 
+#### with Python (3.8)
+
+```python3
+from colorize import colorize
+colorize( ORIGINAL_STRING, A_FOREGROUND_COLOR_STRING, A_BACKGROUND_COLOR_STRING, A_ATTRIBUTE_STRING );
+```
 
 
 
